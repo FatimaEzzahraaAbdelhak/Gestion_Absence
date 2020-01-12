@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.eajy.materialdesigndemo.activity.AjouterDemandeAbsence"
+    >
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view_item_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/card_margin_vertical_big_activity"
+        android:layout_marginEnd="@dimen/card_margin_horizontal_big_activity"
+        android:layout_marginStart="@dimen/card_margin_horizontal_big_activity"
+        android:layout_marginTop="@dimen/card_margin_vertical_big_activity"
+        android:background="@color/white"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardCornerRadius="@dimen/card_recycler_corner_radius"
+        app:cardElevation="@dimen/card_recycler_elevation"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/text_margin">
+
+            <TextView
+                android:id="@+id/tv_recycler_item_2"
+                android:layout_width="87dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="16dp"
+                android:text="Module :"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_recycler_item_3"
+                android:layout_width="87dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_recycler_item_2"
+                android:layout_marginTop="24dp"
+                android:text="Date :"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/etat"
+                android:layout_width="87dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_recycler_item_3"
+                android:layout_marginTop="24dp"
+                android:text="Etat :"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/etat2"
+                android:layout_width="87dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etat"
+                android:layout_marginTop="24dp"
+                android:text="Enseignant :"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:id="@+id/tv_recycler_item_4"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etat2"
+                android:layout_marginTop="29dp"
+                android:text="Fichier :"
+                android:textColor="@color/black" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_main_3"
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="16dp"
+                android:layout_toEndOf="@+id/tv_recycler_item_2"
+                android:entries="@array/spinner_array" />
+
+            <Spinner
+                android:id="@+id/spinner3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView3"
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="18dp"
+                android:layout_toEndOf="@+id/tv_recycler_item_2"
+                android:entries="@array/spinner_array" />
+
+            <Spinner
+                android:id="@+id/spinner4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner3"
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@+id/tv_recycler_item_2"
+                android:entries="@array/spinner_array" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="102dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="23dp"
+                android:layout_toEndOf="@+id/tv_recycler_item_3"
+                android:text="10/04/2020" />
+
+            <android.support.design.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:layout_below="@+id/spinner4"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="14dp"
+                android:layout_toEndOf="@+id/tv_recycler_item_4"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingStart="2dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="2dp"
+                android:paddingBottom="2dp"
+                android:text="Downald"
+                android:textAppearance="?android:attr/textAppearanceButton"
+                android:textColor="@color/white"
+                app:icon="@drawable/ic_photo_black_24dp"
+                app:rippleColor="@color/color_ripple" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/text_margin">
+
+        <android.support.design.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/text_margin"
+            android:layout_marginEnd="33dp"
+            android:layout_marginBottom="108dp"
+            android:clickable="true"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp"
+            android:text="Modifier"
+            android:textAppearance="?android:attr/textAppearanceButton"
+            android:textColor="@color/white"
+            app:cornerRadius="18dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.eajy.materialdesigndemo.activity.ValiderDemandProf">
+
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view_item_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/card_margin_vertical_big_activity"
+        android:layout_marginEnd="@dimen/card_margin_horizontal_big_activity"
+        android:layout_marginStart="@dimen/card_margin_horizontal_big_activity"
+        android:layout_marginTop="@dimen/card_margin_vertical_big_activity"
+        android:background="@color/white"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardCornerRadius="@dimen/card_recycler_corner_radius"
+        app:cardElevation="@dimen/card_recycler_elevation"
+        android:onClick="alert">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/text_margin">
+
+            <TextView
+                android:id="@+id/tv_recycler_item_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nom/Prénom :"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_recycler_item_3"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_recycler_item_2"
+                android:layout_marginTop="24dp"
+                android:text="Date :"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_recycler_item_4"
+                android:layout_width="75dp"
+                android:layout_height="31dp"
+                android:layout_below="@+id/tv_recycler_item_3"
+                android:layout_marginTop="32dp"
+                android:text="Fichier :"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="101dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/tv_recycler_item_2"
+                android:text="hamid zahi" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="24dp"
+                android:layout_toEndOf="@+id/tv_recycler_item_3"
+                android:text="10/04/2020"
+                />
+
+            <android.support.design.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:layout_below="@+id/textView3"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_toEndOf="@+id/tv_recycler_item_4"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingStart="2dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="2dp"
+                android:paddingBottom="2dp"
+                android:text="Downald"
+                android:textAppearance="?android:attr/textAppearanceButton"
+                android:textColor="@color/white"
+                app:icon="@drawable/ic_photo_black_24dp"
+                app:rippleColor="@color/color_ripple" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

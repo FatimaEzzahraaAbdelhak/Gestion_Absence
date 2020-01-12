@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.eajy.materialdesigndemo.activity.JustifierAbsence"
+    >
+
+    <TextView
+        android:id="@+id/add_date_abs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="23dp"
+        android:text="Date : "
+        android:textColor="@color/black" />
+
+
+    <EditText
+        android:id="@+id/et_main_3"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="5dp"
+        android:layout_toEndOf="@+id/add_date_abs"
+        android:hint="@string/main_widget_edit_text"
+        android:maxLength="20"
+        android:maxLines="1" />
+
+
+    <TextView
+        android:id="@+id/add_mod_abs"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_date_abs"
+        android:layout_marginTop="23dp"
+        android:text="Module : "
+        android:textColor="@color/black" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_main_3"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@+id/add_mod_abs"
+        android:entries="@array/spinner_array" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="27dp"
+        android:layout_toEndOf="@+id/add_prof_abs"
+        android:entries="@array/spinner_array" />
+
+    <TextView
+        android:id="@+id/add_prof_abs"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_below="@id/add_mod_abs"
+        android:layout_marginTop="23dp"
+        android:text="Enseignant : "
+        android:textColor="@color/black" />
+
+    <android.support.design.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_prof_abs"
+        android:layout_marginTop="25dp"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp"
+        android:text="Fichier"
+        android:textAppearance="?android:attr/textAppearanceButton"
+        android:textColor="@color/white"
+        app:icon="@drawable/ic_photo_black_24dp"
+        app:rippleColor="@color/color_ripple" />
+
+    <android.support.design.button.MaterialButton
+        android:layout_width="113dp"
+        android:layout_height="45dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/text_margin"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp"
+        android:text="Ajouter"
+        android:textAppearance="?android:attr/textAppearanceButton"
+        android:textColor="@color/white"
+        app:cornerRadius="18dp" />
+
+
+</RelativeLayout>

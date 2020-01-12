@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.eajy.materialdesigndemo.activity.FicheApppel">
+
+    <TableLayout
+        android:layout_width="412dp"
+        android:layout_height="695dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="36dp">
+
+        <TableRow
+            android:background="#0079D6"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="ficheapp"
+                android:text="Fiche d'appele" />
+
+        </TableRow>
+
+        <TableRow
+            android:background="#DAE8FC"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="ficheapp"
+                android:text="Suresh Dasari" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:background="#DAE8FC"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="ficheapp"
+                android:text="Rohini Alavala" />
+
+        </TableRow>
+
+        <TableRow
+            android:background="#DAE8FC"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="ficheapp"
+                android:text="Trishika Dasari" />
+
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>
